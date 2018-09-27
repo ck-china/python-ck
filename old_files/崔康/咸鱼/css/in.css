@@ -1,0 +1,106 @@
+.main{
+	width: 1536px;
+	height: 796px;
+}
+.main .head{
+	width: 1536x;
+	height: 90px;
+	background-color: #fff;
+}
+.main .head .left{
+	margin-left:150px;
+	padding-top:10px;
+	float: left;
+}
+.main .head .right{
+	float: left;
+	width: 1000px;
+	height: 20px;
+	background-color: red;
+	font-size: 12px;
+	text-align: center;
+	line-height: 16px;
+	padding-top: 5px;	
+	margin-top: 20px;
+	margin-left: 110px;
+	color: #6c6c6c;
+	background-color: rgb(254,242,242);
+	border:rgb(255,180,68) 1px solid;
+}
+.main .center{
+	width: 100%;
+	height: 599px;
+	background-image: url(../images/back2.jpg);
+	background-repeat: no-repeat;
+	border-top: 1px solid black;
+}
+.main .center .son{
+	height: 330px;
+	width: 350px;
+	border:1px solid black;
+	background-color: white;
+	margin-left: 100px;
+	margin-top: 150px;
+	padding-left: 30px;
+}
+.main .center .son .form-group{
+	margin-top: 20px;
+	margin-left: 18px;
+	margin-bottom: 15px;
+	color: inherit;
+	font-size: 14px;	
+}
+.main .center .son .form-group .error_tip{
+	display: none;
+	color: red;
+}
+.main .center .son .form-group label{
+	display: inline-block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+.main .center .son .form-group .form-control{
+	display: block;
+	width: 280px;
+	height: 30px;
+}
+.main .center .son button{
+	margin-left:130px;
+}
+.main .center .son .bot{
+	margin-left:180px;
+	margin-top: 20px;
+	color: #9c9c9c;
+}
+.main .center .son .bot #link a{
+	text-decoration: none;
+	color:#9c9c9c;
+}
+.main .center .son .bot #link a:hover{
+	text-decoration: underline;
+	color: red;
+}
+.main .bottom{
+	width: 1536px;
+	height: 105px;
+	border-top: 1px solid black;
+}
+.main .bottom .list{
+	width: 1300px;
+	margin-left:200px;
+	margin-top: 50px;
+}
+.main .bottom .list ul li{
+	display: block;
+	float: left;
+	font-size: 12px;
+	margin-left: 20px;
+}
+.main .bottom .list ul li a{
+	color: #9c9c9c;
+	text-decoration: none;
+}
+.main .bottom .list ul li a:hover{
+	color:red;
+	text-decoration: underline;
+}

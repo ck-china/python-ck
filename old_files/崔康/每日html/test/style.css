@@ -1,0 +1,39 @@
+
+*{
+	margin:0px;
+	padding:0px;
+	font-size: 14px;
+}
+.list{
+	height: 40px;
+	width: 958px;
+	margin: auto;
+	list-style: none;
+	border: 1px solid black;
+	text-align: center;
+}
+/*.list li{
+	float:left;
+	padding:10px auto;
+}*/
+.list a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+div{
+	background-color: gold;
+	padding:5px 10px;
+	font-weight:12px;
+	margin: 5px 10px;
+}
+div:hover{
+	background-color: red;
+	color:white;
+}
+.head{
+	margin: 11px 10px 11px 150px;
+}
+.foot{
+	margin: 11px 150px 11px 10px;
+}

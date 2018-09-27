@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>过渡属性</title>
+		<style type="text/css">
+			.box{
+				width: 100px;
+				height: 100px;
+				border:1px solid black;
+				background-color: gold;
+				/*transition:width 500ms ease,height 500ms ease 500ms,background-color 500ms ease 1s,border-radius 500ms ease 2s;*/
+				transition: all 500ms ease;
+			}
+			.box:active{
+				width:500px;
+				height: 500px;
+				background-color:skyblue;
+				border-radius: 400px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>

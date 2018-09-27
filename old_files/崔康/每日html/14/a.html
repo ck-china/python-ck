@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		#div1{
+			width: 100px;
+			height: 100px;
+			background-color: gold;
+		}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#div1").animate({
+				width:200,height:200
+			},1000,function(){
+				$(this).animate({
+					margin:250
+				})
+			})
+		})
+	</script>
+</head>
+<body>
+	<div id="div1"></div>
+</body>
+</html>

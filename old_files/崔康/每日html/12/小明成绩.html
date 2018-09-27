@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload=function(){
+				var xiao=document.getElementById('score');
+				var but=document.getElementById('tj');
+				but.onclick=function(){
+					var Score=parseInt(xiao.value);
+					if (Score==100) {
+						alert("奖励一辆BMW")
+					}
+					else if (Score >80) {
+						alert("奖励一台iphone15s")
+					}
+					else if (Score >60) {
+						alert("奖励一本参考书")
+					}
+					else if (Score >=0) {
+						alert("这破成绩还要啥自行车")
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		小明成绩<input type="text" id="score">
+		<input type="button" value="提交" id="tj">
+	</body>
+</html>

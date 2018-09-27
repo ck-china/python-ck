@@ -1,0 +1,29 @@
+.main{
+	width: 410px;
+	height: 463px;
+	border:1px solid black;
+	position: relative;
+}
+img{
+	display: block;
+	margin-left: 5px;
+}
+p{
+	font-size: 16px/25px;
+	font-family: "微软雅黑";
+	color: #000;
+}
+.son{
+	width: 400px;
+	margin-left:5px;
+	position: absolute;
+	text-align: center;
+	top: 350px;
+	line-height: 25px;
+	opacity: 0.8;
+}
+span{
+	display: block;
+	background-color: rgb(178,178,178);
+	color: white;
+}

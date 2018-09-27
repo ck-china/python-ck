@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>计划列表</title>
+	<style type="text/css">
+		.list_con{
+			width:400px;
+			margin:50px auto 0;
+		}
+
+		.inputtxt{
+			width:350px;
+			height:30px;
+			border:1px solid #ccc;
+			padding:0px;
+			text-indent:10px;
+			
+		}
+
+		.inputbtn{
+			width:40px;
+			height:32px;
+			padding:0px;
+			border:1px solid #ccc;
+		}
+
+		.list{
+			margin:0;
+			padding:0;
+			list-style:none;
+			margin-top:20px;
+		}
+
+		.list li{
+			height:30px;
+			line-height:30px;
+			border-bottom:1px solid #ccc;
+		}
+
+		.list li span{
+			float:left;
+		}
+
+		.list li a{
+			float:right;
+			text-decoration:none;
+			margin:0 10px;
+		}
+	</style>
+
+	<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#btn1').click(function(){
+				//获取文本框的内容
+				var txt = $('#txt1').val();
+				$('#txt1').val('');
+
+				if(txt == ''){
+					alert('请输入内容！');
+					return;
+				}
+				//按照内容准备好一个li列表项
+				var $li = $('<li><span>'+txt+'</span><a href="javascript:;" class="up"> ↑ </a><a href="javascript:;" class="down"> ↓ </a><a href="javascript:;" class="del">删除</a></li>')
+				//把li添加到ul中
+				$li.appendTo('#list');
+			});
+
+			/*$('.del').click(function(){
+					$(this).parent().remove();
+			});*/
+			$('#list').delegate('a','click',function(){
+				var handler = $(this).attr('class');
+
+				switch(handler){
+					case 'del':
+						var txt = $(this).parent().children(':first').html();
+						if(confirm('你确定要删除"'+txt+'"吗？')){
+							$(this).parent().remove();
+						}
+						break;
+					case 'up':
+						if ($(this).parent().prev().length == 0) {
+							alert('到顶了！');
+							return;
+						}
+						$(this).parent().insertBefore($(this).parent().prev());
+						break;
+					case 'down':
+						if ($(this).parent().next().length == 0) {
+							alert('到底了！');
+							return;
+						}
+						$(this).parent().insertAfter($(this).parent().next());
+						break;
+				}
+			});
+
+		})
+	</script>
+
+</head>
+<body>
+	<div class="list_con">
+	<h2>To do list</h2>
+		<input type="text" name="" id="txt1" class="inputtxt">
+		<input type="button" name="" value="增加" id="btn1" class="inputbtn">
+		
+		<ul id="list" class="list">
+
+			<li><span>学习html</span><a href="javascript:;" class="up"> ↑ </a><a href="javascript:;" class="down"> ↓ </a><a href="javascript:;" class="del">删除</a></li>
+			<li><span>学习css</span><a href="javascript:;" class="up"> ↑ </a><a href="javascript:;" class="down"> ↓ </a><a href="javascript:;" class="del">删除</a></li>
+			<li><span>学习javascript</span><a href="javascript:;" class="up"> ↑ </a><a href="javascript:;" class="down"> ↓ </a><a href="javascript:;" class="del">删除</a></li>
+
+		</ul>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+        window.onload=function(){
+            var a,b,c;
+            for(a=0;a<4;a++){
+                for(b=0;b<3-a;b++){
+                    document.write("-");
+                };
+                for (c= 0; c< 2 * a + 1; c++){
+                document.write("*")
+                };
+            document.write("<br/>")
+            }
+            for(a=0;a<3;a++){
+                for(b=0;b<a+1;b++){
+                    document.write("-");
+                };
+                for (c= 0; c<5-2*a; c++){
+                document.write("*")
+                };
+            document.write("<br/>")
+            }
+            var str="abcde";
+            var arr=str.split("");
+            arr=arr.reverse();
+            document.write(arr.join(""));
+            var stt="Hello Lvye!";
+            var res="";
+            for(var n=0;n<stt.length;n++){
+                if(stt.charAt(n)!="e"){
+                    res+=stt.charAt(n);
+                };
+            }
+            document.write("<br/>");
+            document.write(res);
+            document.write("<br/>");
+            var str = "Rome was not built in a day";
+            var num=0;
+            for(var i=0;i<str.length;i++){
+                if(str.charAt(i)==" "){
+                    num++;
+                };
+            }
+            num++;
+            alert(num);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

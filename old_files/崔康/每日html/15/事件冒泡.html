@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.gf{
+			width: 400px;
+			height: 400px;
+			background-color: gold;
+		}
+		.fa{
+			width: 200px;
+			height: 200px;
+			background-color: skyblue;
+		}
+		.son{
+			width: 100px;
+			height: 100px;
+			background-color:pink;
+		}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("body").click(function(){
+				alert("4");
+			});
+			$(".gf").click(function(){
+				alert("3");
+			});
+			$(".fa").click(function(){
+				alert("2");
+			});
+			$(".son").click(function(){
+				alert("1");
+				//event.stopPropagation();
+				//return false;阻止事件冒泡
+			});
+			$(document).contextmenu(function(event){
+				return false;
+			})
+		})
+	</script>
+</head>
+<body>
+	<div class="gf"><div class="fa"><div class="son"></div></div></div>
+</body>
+</html>

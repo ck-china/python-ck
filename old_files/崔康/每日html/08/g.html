@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			.box{
+				width: 500px;
+				height:250px;
+				border:1px solid black;
+				margin: 70px auto 0px;
+			}
+			.box .son1{
+				width:80px;
+				height: 60px;
+				border:1px solid black;
+				display: inline-block;
+				margin:80px 6px 50px;
+				background-color: red;
+				border-radius: 20px;
+				animation: moving 1s ease 200ms infinite alternate;
+			}
+			.box .son2{
+				width:80px;
+				height: 60px;
+				border:1px solid black;
+				display: inline-block;
+				margin:80px 6px 50px;
+				background-color: orange;
+				border-radius: 30px;
+				animation: moving 1s ease 300ms infinite alternate;
+			}
+			.box .son3{
+				width:80px;
+				height: 60px;
+				border:1px solid black;
+				display: inline-block;
+				margin:80px 6px 50px;
+				background-color: yellow;
+				border-radius: 30px;
+				animation: moving 1s ease 400ms infinite alternate;
+			}
+			.box .son4{
+				width:80px;
+				height: 60px;
+				border:1px solid black;
+				display: inline-block;
+				margin:80px 6px 50px;
+				background-color: green;
+				border-radius: 30px;
+				animation: moving 1s ease 500ms infinite alternate;
+			}
+			.box .son5{
+				width:80px;
+				height: 60px;
+				border:1px solid black;
+				display: inline-block;
+				margin:80px 6px 50px;
+				background-color: skyblue;
+				border-radius: 30px;
+				animation: moving 1s ease 600ms infinite alternate;
+			}
+			@keyframes moving{
+				from{
+					transform:scaleY(0.5);
+				}
+				to{
+					transform:scaleY(2);
+					background-color: #DB7093
+				}
+			}
+			.box p{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="son1"></div>
+			<div class="son2"></div>
+			<div class="son3"></div>
+			<div class="son4"></div>
+			<div class="son5"></div>
+			<p>loding...</p>
+		</div>
+	</body>
+</html>

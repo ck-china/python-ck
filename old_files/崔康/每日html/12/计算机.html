@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script type="text/javascript">
+			window.onload =function(){
+				var one=document.getElementById('ipt1');
+				var two=document.getElementById('select');
+				var three=document.getElementById('ipt2');
+				var but=document.getElementById("btn");
+				but.onclick=function(){					
+						if(two.value=="1"){
+							alert(((parseFloat(one.value)*100)+(parseFloat(three.value)*100))/100);
+						}
+						else if(two.value=="2"){
+							alert(((parseFloat(one.value)*100)-(parseFloat(three.value)*100))/100);
+						}
+						else if(two.value=="3"){
+							alert(((parseFloat(one.value)*100)*(parseFloat(three.value)*100))/10000);
+						}
+						else if(two.value=="4"){
+							alert(((parseFloat(one.value)*100)/(parseFloat(three.value)*100))/100);
+						}
+					}
+					
+				}
+			
+		</script>
+	</head>
+	<body>
+		<input type="text" id="ipt1">
+		<select id="select">
+			<option value="1">+</option>
+			<option value="2">-</option>
+			<option value="3">*</option>
+			<option value="4">/</option>
+		</select>
+		<input type="text" id="ipt2">
+		<input type="button" id="btn" value="提交">
+	</body>
+</html>

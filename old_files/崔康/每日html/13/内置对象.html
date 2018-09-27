@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		window.onload=function(){
+			var date=window.location.search;
+			//alert(date);
+			var arr=date.split('=');
+			var name=arr[1];
+			var oSpan=document.getElementById('span1');
+			oSpan.innerHTML=name;
+		}
+		
+	</script>
+</head>
+<body>
+	<div>欢迎<span id="span1"></span>访问我的主页</div>
+</body>
+</html>

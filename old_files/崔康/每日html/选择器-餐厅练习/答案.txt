@@ -1,0 +1,26 @@
+1	plate	元素选择器
+2	bento	元素选择器
+3	#fancy	ID选择器
+4	plate apple		后代元素选择器
+5	#fancy pickle	符合选择器
+6	.small		类选择器
+7	orange.small	复合选择器
+8	bento orange	后代选择器
+9	plate bento		并集选择器
+10	* 	通配选择器
+11	plate * 	后代元素选择器
+12	plate + apple	 兄弟元素选择器
+13	bento~pickle	 兄弟元素选择器
+14	plate > apple 	子元素选择器
+15	orange：first-child		子元素选择器
+16	：only-child		子元素选择器
+17	.small:last-child 	子元素选择器
+18	plate:nth-child(3)	子元素选择器
+19	:nth-last-child(4)	子元素选择器
+20	apple:first-of-type		子元素选择器
+21	plate:nth-of-type(even) 	子元素选择器
+22	plate:nth-of-type(2n+3) 	子元素选择器
+23	apple:only-of-type	 子元素选择器
+24	.small:nth-child(even)	 子元素选择器
+25	bento:empty 	子元素选择器
+26	apple:not(.small)	 not选择器

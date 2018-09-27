@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="1.css" id="csslink">
+		<script type="text/javascript">
+			window.onload=function(){
+				var one=document.getElementById('btn1');
+				var two=document.getElementById('btn2');
+				one.onclick=skin1;
+				two.onclick=skin2;
+			}
+			function skin1(){
+				var olick=document.getElementById('csslink');
+				olick.href='1.css';
+			}
+			function skin2(){
+				var olick=document.getElementById('csslink');
+				olick.href="2.css";
+			}
+			
+		</script>
+	</head>
+	<body>
+		<input type="button" value="按钮1" id="btn1">
+		<input type="button" value="按钮2" id="btn2">
+	</body>
+</html>

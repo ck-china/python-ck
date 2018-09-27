@@ -1,0 +1,96 @@
+	<style type="text/css">
+		body{
+			font-family:'Microsoft Yahei';
+		}
+		body,ul{
+			margin:0px;
+			padding:0px;
+		}
+		ul{list-style:none;}
+		.menu{
+			width:200px;
+			margin:20px auto 0;
+		}
+		.menu .level1,.menu li ul a{
+			display:block;
+			width:200px;
+			height:30px;
+			line-height:30px;
+			text-decoration:none;
+			background-color:#3366cc;
+			color:#fff;
+			font-size:16px;
+			text-indent:10px;			
+		}
+		.menu .level1{
+			border-bottom:1px solid #afc6f6;
+			
+		}
+		.menu li ul a{
+			font-size:14px;
+			text-indent:20px;
+			background-color:#7aa1ef;
+					
+		}
+		.menu li ul li{
+			border-bottom:1px solid #afc6f6;
+		}
+		.menu li ul{
+			display:none;
+		}
+		.menu li ul.current{
+			display:block;
+		}
+		.menu li ul li a:hover{
+			background-color:#f6b544;
+		}
+	</style>
+
+
+
+	<ul class="menu">
+		<li>
+			<a href="#" class="level1">Ë®¹û</a>
+			<ul class="current">
+				<li><a href="#">Æ»¹û</a></li>
+				<li><a href="#">Àæ×Ó</a></li>
+				<li><a href="#">ÆÏÌÑ</a></li>
+				<li><a href="#">»ğÁú¹û</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#" class="level1">º£ÏÊ</a>
+			<ul>
+				<li><a href="#">òÉ×Ó</a></li>
+				<li><a href="#">ÉÈ±´</a></li>
+				<li><a href="#">ÁúÏº</a></li>
+				<li><a href="#">Ïó°Î°ö</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#" class="level1">ÈâÀà</a>
+			<ul>
+				<li><a href="#">ÄÚÃÉ¹ÅÑòÈâ</a></li>
+				<li><a href="#">½ø¿ÚÅ£Èâ</a></li>
+				<li><a href="#">Ò°ÖíÈâ</a></li>				
+			</ul>
+		</li>
+		<li>
+			<a href="#" class="level1">Êß²Ë</a>
+			<ul>
+				<li><a href="#">ÍŞÍŞ²Ë</a></li>
+				<li><a href="#">Î÷ºìÊÁ</a></li>
+				<li><a href="#">Î÷ÇÛ</a></li>
+				<li><a href="#">ºúÂÜ²·</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#" class="level1">ËÙ¶³</a>
+			<ul>
+				<li><a href="#">±ùä¿ÁÜ</a></li>
+				<li><a href="#">Íå×ĞÂëÍ·</a></li>
+				<li><a href="#">º£²Î</a></li>
+				<li><a href="#">Å£ÈâÍè</a></li>
+			</ul>
+		</li>
+	</ul>

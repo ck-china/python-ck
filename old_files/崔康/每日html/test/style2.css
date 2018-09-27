@@ -1,0 +1,29 @@
+*{
+	margin: 0px;
+	padding:0px;
+}
+.box{
+	height: 40px;
+	width: 958px;
+	margin: 0px auto;
+	text-align: center;
+	list-style: none;
+	border: 1px solid black;
+}
+ a{
+	float: left;
+	display: block;
+	margin: 14px 20px;
+	color:black;
+	font-size: 14px;
+	text-decoration: none;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-right: 1px solid black;
+
+}
+
+a:hover{
+	color:white;
+	background-color: red;
+}

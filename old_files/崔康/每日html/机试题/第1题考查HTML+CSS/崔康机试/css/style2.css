@@ -1,0 +1,14 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+.demo{
+	list-style-type: none;
+	font-size: 18px;
+	font-weight: bold;
+}
+.demo li{
+	display: block;
+	float: left;
+	margin-right: 30px;
+}

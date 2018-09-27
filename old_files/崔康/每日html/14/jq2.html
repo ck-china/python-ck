@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		window.onload=function(){
+			var oDiv=document.getElementById('div1');
+			alert(oDiv.innerHTML);
+		}
+		$(document).ready(function(){
+				var $div=$('#div1');
+				alert('jQuery:'+ $div.html());
+		})
+		$(function(){
+			var $div=$('div1');
+			alert("简写JQ:"+$div.html());
+		})
+	</script>
+</head>
+<body>
+	<div id="div1">我是div</div>
+</body>
+</html>

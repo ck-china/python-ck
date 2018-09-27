@@ -1,0 +1,61 @@
+	<style type="text/css">
+		.list_con{
+			width:400px;
+			margin:50px auto 0;
+		}
+
+		.inputtxt{
+			width:350px;
+			height:30px;
+			border:1px solid #ccc;
+			padding:0px;
+			text-indent:10px;
+			
+		}
+
+		.inputbtn{
+			width:40px;
+			height:32px;
+			padding:0px;
+			border:1px solid #ccc;
+		}
+
+		.list{
+			margin:0;
+			padding:0;
+			list-style:none;
+			margin-top:20px;
+		}
+
+		.list li{
+			height:30px;
+			line-height:30px;
+			border-bottom:1px solid #ccc;
+		}
+
+		.list li span{
+			float:left;
+		}
+
+		.list li a{
+			float:right;
+			text-decoration:none;
+			margin:0 10px;
+		}
+	</style>
+
+
+	<div class="list_con">
+	<h2>To do list</h2>
+		<input type="text" name="" id="txt1" class="inputtxt">
+		<input type="button" name="" value="Ôö¼Ó" id="btn1" class="inputbtn">
+		
+		<ul id="list" class="list">
+
+			<li><span>Ñ§Ï°html</span><a href="javascript:;" class="up"> ¡ü </a><a href="javascript:;" class="down"> ¡ý </a><a href="javascript:;" class="del">É¾³ý</a></li>
+			<li><span>Ñ§Ï°css</span><a href="javascript:;" class="up"> ¡ü </a><a href="javascript:;" class="down"> ¡ý </a><a href="javascript:;" class="del">É¾³ý</a></li>
+			<li><span>Ñ§Ï°javascript</span><a href="javascript:;" class="up"> ¡ü </a><a href="javascript:;" class="down"> ¡ý </a><a href="javascript:;" class="del">É¾³ý</a></li>
+
+		</ul>
+
+	</div>

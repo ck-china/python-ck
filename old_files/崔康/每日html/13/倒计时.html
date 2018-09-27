@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload=function(){
+				var oDiv=document.getElementById('div1');
+				function timeLeft(){
+					var now=new Date();
+					var fucture=new Date(2018,11,11,0,0,0);
+					var mill=parseInt((fucture-now)/1000);
+					if(mill<=0){
+						window.location.href = 'http://www.baidu.com';
+					}
+					var day=parseInt(mill/(60*60*24));
+					var hour=parseInt(mill%86400/3600);
+					var minute=parseInt((mill%86400%3600)/60);
+					var second=mill%60;
+					oDiv.innerHTML="距离2018年双十一还有"+day+"天"+hour+"时"+minute+"分"+second+"秒！！！";
+				}
+				timeLeft();
+				setInterval(timeLeft,1000);
+			}
+		</script>
+		<style type="text/css">
+			body{
+				background-color: skyblue;
+			}
+			div{
+				width: 950px;
+				margin: 100px auto;
+				font-size: 40px;
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1"></div>
+	</body>
+</html>
