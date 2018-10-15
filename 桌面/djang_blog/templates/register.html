@@ -1,0 +1,42 @@
+{% extends 'base1.html' %}
+{% block base %}
+    {% include 'base.html' %}
+{% endblock %}
+{% block content %}
+    {% if mag %}
+        <div class="alert alert-warning">{{ mag }}</div>
+    {% endif %}
+    {% if mmcw %}
+        <div class="alert alert-warning">{{ mmcw }}</div>
+    {% endif %}
+
+    <div style="margin: 5% 40%;">
+        <h2>欢迎注册！</h2>
+
+        <form action="{% url 'user:register1' %}" method="post">
+
+            {% csrf_token %}
+
+
+            <p>
+                <label for="id_username">用户名：</label>
+                <input type="text" id="id_username" name="username" placeholder="用户名"/>
+            </p>
+
+
+            <p>
+                <label for="id_password">密码：</label>
+                <input type="password" id="id_password" placeholder="密码" name="password">
+            </p>
+            <p>
+                <label for="id_password1">确认密码：</label>
+                <input type="password" id="id_password1" placeholder="确认密码" name="password1">
+            </p>
+            <p>
+                <label for="id_email">邮箱：</label>
+                <input type="text" id="id_email" placeholder="邮箱" name="email">
+            </p>
+            <input type="submit" value="确定">
+        </form>
+    </div>
+{% endblock %}
